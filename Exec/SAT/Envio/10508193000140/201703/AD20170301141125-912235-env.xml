@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CFe>
+   <infCFe versaoDadosEnt="0.07">
+      <ide>
+         <CNPJ>10508193000140</CNPJ>
+         <signAC>paBe8RzeWBTFMzS2fp3s1V+gSlTLeNJau+RMoTp2TNhPBzbhSl9YyNILR84eOjZRSpgdFYcE3kgx2pdNZQPvDYt3tUbjZ0y9wCd/6sWBIPHfLmR9lUT/b9LBLvZSpRPUt0E8KMxp1ogWROenu9iNbrgv9ECT7p3AVsFa/faQrf8MVcNF0jzasYk9RuHG8JFhm/NvBHC0kShlpZtSDHKr8J7ZpMjkL5FpM6SB66dM+gUEGAOLfV0SkKzczub9AVIjiQu3AC1d9kKLM34Zdg0STqUsGGMD+jrlMw4c+SAMjTuhZ8iekv4DOEzHtPlSxC02m/Frxhb16uWSN8sHmUcYhQ==</signAC>
+         <numeroCaixa>001</numeroCaixa>
+      </ide>
+      <emit>
+         <CNPJ>10508193000140</CNPJ>
+         <IE>445078786117</IE>
+         <IM>00000</IM>
+         <cRegTribISSQN>1</cRegTribISSQN>
+         <indRatISSQN>N</indRatISSQN>
+      </emit>
+      <dest>
+         <xNome>CONSUMIDOR</xNome>
+      </dest>
+      <det nItem="1">
+         <prod>
+            <cProd>73</cProd>
+            <cEAN>7898096852244</cEAN>
+            <xProd>URGUENTO CHEMITEC</xProd>
+            <CFOP>5102</CFOP>
+            <uCom>un</uCom>
+            <qCom>1.0000</qCom>
+            <vUnCom>12.50</vUnCom>
+            <indRegra>A</indRegra>
+         </prod>
+         <imposto>
+            <ICMS>
+               <ICMSSN102>
+                  <Orig>0</Orig>
+                  <CSOSN>102</CSOSN>
+               </ICMSSN102>
+            </ICMS>
+            <PIS>
+               <PISSN>
+                  <CST>49</CST>
+               </PISSN>
+            </PIS>
+            <COFINS>
+               <COFINSSN>
+                  <CST>49</CST>
+               </COFINSSN>
+            </COFINS>
+         </imposto>
+      </det>
+      <total>
+         <vCFeLei12741>0.00</vCFeLei12741>
+      </total>
+      <pgto>
+         <MP>
+            <cMP>01</cMP>
+            <vMP>12.50</vMP>
+         </MP>
+      </pgto>
+      <infAdic>
+         <infCpl>OPERADOR:  - Caixa: 001</infCpl>
+      </infAdic>
+   </infCFe>
+</CFe>

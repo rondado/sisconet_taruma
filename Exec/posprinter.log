@@ -1,0 +1,209 @@
+
+--------------------------------------------------------------------------------
+DESATIVAR - 21/12/17 11:10:52:181
+--------------------------------------------------------------------------------
+
+-- 21/12 11:10:52:268 - SetModelo(ppEscBematech)
+
+--------------------------------------------------------------------------------
+ATIVAR - 21/12/17 11:11:36:861
+  - Modelo.: EscBematech
+  - TimeOut: 3
+  - Serial.: COM5 - BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 21/12 11:11:36:892 - Imprimir, Copias:1, DecodificarTags:SIM, TraduzirTags:SIM
+-- 21/12 11:11:36:894 - </zera></ce></logo>
+<n></n>
+<c>J W VETERINARIA LTDA ME
+RUA JACINTO FELIZARDO BARBOSA 856  CENTRO-MIGUELOPOLIS-14530-000
+</ae><c>CNPJ:10.508.193/0001-40 IE:445078786117 IM:00000
+</linha_simples>
+</fn></ce><n>Extrato No. 000040
+CUPOM FISCAL ELETRÔNICO - SAT</n>
+</linha_simples>
+</ae><c>CPF/CNPJ do Consumidor: 312.454.138-30
+</ae></fn><e>TOTAL R$        5,50</e>
+<c>Dinheiro                                         5,50
+<c> 
+<c>ICMS a ser recolhido conforme LC 123/2006 - Simples Nacional
+<c>02.03.04.03-Consulte o QRCode deste extrato atraves do App DeOlhoNaNota
+</fn></linha_simples>
+OBSERVAÇÕES DO CONTRIBUINTE
+<c>OPERADOR:  - Caixa: 001
+<c>Valor aproximado dos tributos deste cupom R$  <n>1,73
+</n>(conforme Lei Fed. 12.741/2012)
+</fn></linha_simples>
+</ce>SAT No. <n>112010</n>
+21/12/2017 11:11:33
+<c>35171210508193000140590001120100000408704246</fn>
+<code128>3517121050819300014059</code128>
+<code128>0001120100000408704246</code128>
+<qrcode_tipo>2</qrcode_tipo><qrcode_error>0</qrcode_error><qrcode>35171210508193000140590001120100000408704246|20171221111133|5.50|31245413830|g1drVlrUfOWw4QYuRkPY7SS3asjCeePReq75sltbbbKffWkenoSOu9r6Jnjf0nb9odbCtapQCNsxVgwnaE2YAKjQLNR56fTlim0zCz/M6TI2f8OXSpTBYGydQQqIBDIoHndXw1rAGT49PrKUjCVGkYOkdt1xbujq1xZA+S7GAxmrhd6qIJeCP4c/2tvMPzlOS3j76+AxRd7yWWxUryg+YrsuVEsp383a4dxr3gFj/q2LmDx5EJiwO4qGB3x0F9M02hhcZLn7rEMo+Du+J2ykXpBEkqLF/7wKK0WpU02g4y7QMwxxjmGCjd1UC4UlhwJ1BmLHRNR7e/03k7TzEe82vA==</qrcode><qrcode_tipo>2</qrcode_tipo><qrcode_error>0</qrcode_error>
+</ce><c>Consulte o QR Code pelo aplicativo  "De olho na 
+nota", disponível na AppStore (Apple) e PlayStore 
+(Android)
+</linha_simples>
+</ce><c>Projeto ACBr
+</ce><c>Fone:1638355042 - 
+</pular_linhas>
+
+-- 21/12 11:11:36:899 - TraduzirTag(</zera>) -> [ESC]@[GS][249] [NUL][ESC]3[SOH][ESC]t[BS]
+-- 21/12 11:11:36:901 - TraduzirTag(</ce>) -> [ESC]a[SOH]
+-- 21/12 11:11:36:906 - TraduzirTag(</logo>) -> [FS]p[SOH][NUL]
+-- 21/12 11:11:36:908 - TraduzirTag(<n>) -> [ESC]E
+-- 21/12 11:11:36:914 - TraduzirTag(</n>) -> [ESC]F
+-- 21/12 11:11:36:916 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:36:920 - TraduzirTag(</ae>) -> [ESC]a[NUL]
+-- 21/12 11:11:36:922 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:36:927 - TraduzirTag(</linha_simples>) -> -----------------------------------------------------
+-- 21/12 11:11:36:930 - TraduzirTag(</fn>) -> [ESC]![NUL][ESC]H[ESC]5
+-- 21/12 11:11:36:935 - TraduzirTag(</ce>) -> [ESC]a[SOH]
+-- 21/12 11:11:36:937 - TraduzirTag(<n>) -> [ESC]E
+-- 21/12 11:11:36:977 - TraduzirTag(</n>) -> [ESC]F
+-- 21/12 11:11:36:980 - TraduzirTag(</linha_simples>) -> ----------------------------------------
+-- 21/12 11:11:36:985 - TraduzirTag(</ae>) -> [ESC]a[NUL]
+-- 21/12 11:11:36:987 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:36:993 - TraduzirTag(</ae>) -> [ESC]a[NUL]
+-- 21/12 11:11:36:995 - TraduzirTag(</fn>) -> [ESC]![NUL][ESC]H[ESC]5
+-- 21/12 11:11:37:000 - TraduzirTag(<e>) -> [ESC]W[SOH]
+-- 21/12 11:11:37:001 - TraduzirTag(</e>) -> [ESC]W[NUL]
+-- 21/12 11:11:37:007 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:009 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:014 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:020 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:022 - TraduzirTag(</fn>) -> [ESC]![NUL][ESC]H[ESC]5
+-- 21/12 11:11:37:027 - TraduzirTag(</linha_simples>) -> ----------------------------------------
+-- 21/12 11:11:37:030 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:035 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:037 - TraduzirTag(<n>) -> [ESC]E
+-- 21/12 11:11:37:041 - TraduzirTag(</n>) -> [ESC]F
+-- 21/12 11:11:37:044 - TraduzirTag(</fn>) -> [ESC]![NUL][ESC]H[ESC]5
+-- 21/12 11:11:37:049 - TraduzirTag(</linha_simples>) -> ----------------------------------------
+-- 21/12 11:11:37:051 - TraduzirTag(</ce>) -> [ESC]a[SOH]
+-- 21/12 11:11:37:056 - TraduzirTag(<n>) -> [ESC]E
+-- 21/12 11:11:37:059 - TraduzirTag(</n>) -> [ESC]F
+-- 21/12 11:11:37:065 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:069 - TraduzirTag(</fn>) -> [ESC]![NUL][ESC]H[ESC]5
+-- 21/12 11:11:37:074 - TraduzirTagBloco(<code128>, 3517121050819300014059) -> [GS]w[STX][GS]h2[GS]H[NUL][GS]kI[24]3517121050819300014059
+-- 21/12 11:11:37:077 - TraduzirTagBloco(<code128>, 0001120100000408704246) -> [GS]w[STX][GS]h2[GS]H[NUL][GS]kI[24]0001120100000408704246
+-- 21/12 11:11:37:082 - TraduzirTagBloco(<qrcode_tipo>, 2) -> 
+-- 21/12 11:11:37:083 - TraduzirTagBloco(<qrcode_error>, 0) -> 
+-- 21/12 11:11:37:090 - TraduzirTagBloco(<qrcode>, 35171210508193000140590001120100000408704246|20171221111133|5.50|31245413830|g1drVlrUfOWw4QYuRkPY7SS3asjCeePReq75sltbbbKffWkenoSOu9r6Jnjf0nb9odbCtapQCNsxVgwnaE2YAKjQLNR56fTlim0zCz/M6TI2f8OXSpTBYGydQQqIBDIoHndXw1rAGT49PrKUjCVGkYOkdt1xbujq1xZA+S7GAxmrhd6qIJeCP4c/2tvMPzlOS3j76+AxRd7yWWxUryg+YrsuVEsp383a4dxr3gFj/q2LmDx5EJiwO4qGB3x0F9M02hhcZLn7rEMo+Du+J2ykXpBEkqLF/7wKK0WpU02g4y7QMwxxjmGCjd1UC4UlhwJ1BmLHRNR7e/03k7TzEe82vA==) -> [GS]kQ[NUL][BS][NUL][SOH][165][SOH]35171210508193000140590001120100000408704246|20171221111133|5.50|31245413830|g1drVlrUfOWw4QYuRkPY7SS3asjCeePReq75sltbbbKffWkenoSOu9r6Jnjf0nb9odbCtapQCNsxVgwnaE2YAKjQLNR56fTlim0zCz/M6TI2f8OXSpTBYGydQQqIBDIoHndXw1rAGT49PrKUjCVGkYOkdt1xbujq1xZA+S7GAxmrhd6qIJeCP4c/2tvMPzlOS3j76+AxRd7yWWxUryg+YrsuVEsp383a4dxr3gFj/q2LmDx5EJiwO4qGB3x0F9M02hhcZLn7rEMo+Du+J2ykXpBEkqLF/7wKK0WpU02g4y7QMwxxjmGCjd1UC4UlhwJ1BmLHRNR7e/03k7TzEe82vA==
+-- 21/12 11:11:37:092 - TraduzirTagBloco(<qrcode_tipo>, 2) -> 
+-- 21/12 11:11:37:097 - TraduzirTagBloco(<qrcode_error>, 0) -> 
+-- 21/12 11:11:37:100 - TraduzirTag(</ce>) -> [ESC]a[SOH]
+-- 21/12 11:11:37:105 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:111 - TraduzirTag(</linha_simples>) -> -----------------------------------------------------
+-- 21/12 11:11:37:113 - TraduzirTag(</ce>) -> [ESC]a[SOH]
+-- 21/12 11:11:37:119 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:121 - TraduzirTag(</ce>) -> [ESC]a[SOH]
+-- 21/12 11:11:37:126 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:128 - TraduzirTag(</pular_linhas>) ->  [LF]
+-- 21/12 11:11:37:135 - EnviarStringDevice( [ESC]@[GS][249] [NUL][ESC]3[SOH][ESC]t[BS][ESC]a[SOH][FS]p[SOH][NUL][CR][LF][ESC]E[ESC]F[CR][LF][ESC][15]J W VETERINARIA LTDA ME[CR][LF]RUA JACINTO FELIZARDO BARBOSA 856  CENTRO-MIGUELOPOLIS-14530-000[CR][LF][ESC]a[NUL][ESC][15]CNPJ:10.508.193/0001-40 IE:445078786117 IM:00000[CR][LF]-----------------------------------------------------[CR][LF][ESC]![NUL][ESC]H[ESC]5[ESC]a[SOH][ESC]EExtrato No. 000040[CR][LF]CUPOM FISCAL ELETR[195][148]NICO - SAT[ESC]F[CR][LF]----------------------------------------[CR][LF][ESC]a[NUL][ESC][15]CPF/CNPJ do Consumidor: 312.454.138-30[CR][LF][ESC]a[NUL][ESC]![NUL][ESC]H[ESC]5[ESC]W[SOH]TOTAL R$        5,50[ESC]W[NUL][CR][LF][ESC][15]Dinheiro                                         5,50[CR][LF][ESC][15] [CR][LF][ESC][15]ICMS a ser recolhido conforme LC 123/2006 - Simples Nacional[CR][LF][ESC][15]02.03.04.03-Consulte o QRCode deste extrato atraves do App DeOlhoNaNota[CR][LF][ESC]![NUL][ESC]H[ESC]5----------------------------------------[CR][LF]OBSERVA[195][135][195][149]ES DO CONTRIBUINTE[CR][LF][ESC][15]OPERADOR:  - Caixa: 001[CR][LF][ESC][15]Valor aproximado dos tributos deste cupom R$  [ESC]E1,73[CR][LF][ESC]F(conforme Lei Fed. 12.741/2012)[CR][LF][ESC]![NUL][ESC]H[ESC]5----------------------------------------[CR][LF][ESC]a[SOH]SAT No. [ESC]E112010[ESC]F[CR][LF]21/12/2017 11:11:33[CR][LF][ESC][15]35171210508193000140590001120100000408704246[ESC]![NUL][ESC]H[ESC]5[CR][LF][GS]w[STX][GS]h2[GS]H[NUL][GS]kI[24]3517121050819300014059[CR][LF][GS]w[STX][GS]h2[GS]H[NUL][GS]kI[24]0001120100000408704246[CR][LF][GS]kQ[NUL][BS][NUL][SOH][165][SOH]35171210508193000140590001120100000408704246|20171221111133|5.50|31245413830|g1drVlrUfOWw4QYuRkPY7SS3asjCeePReq75sltbbbKffWkenoSOu9r6Jnjf0nb9odbCtapQCNsxVgwnaE2YAKjQLNR56fTlim0zCz/M6TI2f8OXSpTBYGydQQqIBDIoHndXw1rAGT49PrKUjCVGkYOkdt1xbujq1xZA+S7GAxmrhd6qIJeCP4c/2tvMPzlOS3j76+AxRd7yWWxUryg+YrsuVEsp383a4dxr3gFj/q2LmDx5EJiwO4qGB3x0F9M02hhcZLn7rEMo+Du+J2ykXpBEkqLF/7wKK0WpU02g4y7QMwxxjmGCjd1UC4UlhwJ1BmLHRNR7e/03k7TzEe82vA==[CR][LF][ESC]a[SOH][ESC][15]Consulte o QR Code pelo aplicativo  "De olho na [CR][LF]nota", dispon[195][173]vel na AppStore (Apple) e PlayStore [CR][LF](Android)[CR][LF]-----------------------------------------------------[CR][LF][ESC]a[SOH][ESC][15]Projeto ACBr[CR][LF][ESC]a[SOH][ESC][15]Fone:1638355042 - [CR][LF] [LF][CR][LF])
+-- 21/12 11:11:37:139 - Imprimir, Copias:1, DecodificarTags:SIM, TraduzirTags:SIM
+-- 21/12 11:11:37:145 - </zera></ce></logo>
+<n></n>
+<c>J W VETERINARIA LTDA ME
+RUA JACINTO FELIZARDO BARBOSA 856  CENTRO-MIGUELOPOLIS-14530-000
+</ae><c>CNPJ:10.508.193/0001-40 IE:445078786117 IM:00000
+</linha_simples>
+</fn></ce><n>Extrato No. 000040
+CUPOM FISCAL ELETRÔNICO - SAT</n>
+</linha_simples>
+</ae><c>CPF/CNPJ do Consumidor: 312.454.138-30
+</ae><c></linha_simples>
+# COD DESC  QTD  UN  VL UN R$  (VLTR R$)*  VL ITEM R$
+</linha_simples>
+</ae><c>001 238 AREIA GATISSIMO 4KG         1 SC X 5,500 5,50
+</ae></fn><e>TOTAL R$        5,50</e>
+<c>Dinheiro                                         5,50
+<c> 
+<c>ICMS a ser recolhido conforme LC 123/2006 - Simples Nacional
+<c>02.03.04.03-Consulte o QRCode deste extrato atraves do App DeOlhoNaNota
+</fn></linha_simples>
+OBSERVAÇÕES DO CONTRIBUINTE
+<c>OPERADOR:  - Caixa: 001
+<c>*Valor aproximado dos tributos do item
+<c>Valor aproximado dos tributos deste cupom R$  <n>1,73
+</n>(conforme Lei Fed. 12.741/2012)
+</fn></linha_simples>
+</ce>SAT No. <n>112010</n>
+21/12/2017 11:11:33
+<c>35171210508193000140590001120100000408704246</fn>
+<code128>3517121050819300014059</code128>
+<code128>0001120100000408704246</code128>
+<qrcode_tipo>2</qrcode_tipo><qrcode_error>0</qrcode_error><qrcode>35171210508193000140590001120100000408704246|20171221111133|5.50|31245413830|g1drVlrUfOWw4QYuRkPY7SS3asjCeePReq75sltbbbKffWkenoSOu9r6Jnjf0nb9odbCtapQCNsxVgwnaE2YAKjQLNR56fTlim0zCz/M6TI2f8OXSpTBYGydQQqIBDIoHndXw1rAGT49PrKUjCVGkYOkdt1xbujq1xZA+S7GAxmrhd6qIJeCP4c/2tvMPzlOS3j76+AxRd7yWWxUryg+YrsuVEsp383a4dxr3gFj/q2LmDx5EJiwO4qGB3x0F9M02hhcZLn7rEMo+Du+J2ykXpBEkqLF/7wKK0WpU02g4y7QMwxxjmGCjd1UC4UlhwJ1BmLHRNR7e/03k7TzEe82vA==</qrcode><qrcode_tipo>2</qrcode_tipo><qrcode_error>0</qrcode_error>
+</ce><c>Consulte o QR Code pelo aplicativo  "De olho na 
+nota", disponível na AppStore (Apple) e PlayStore 
+(Android)
+</linha_simples>
+</ce><c>Projeto ACBr
+</ce><c>Fone:1638355042 - 
+</pular_linhas>
+
+-- 21/12 11:11:37:147 - TraduzirTag(</zera>) -> [ESC]@[GS][249] [NUL][ESC]3[SOH][ESC]t[BS]
+-- 21/12 11:11:37:153 - TraduzirTag(</ce>) -> [ESC]a[SOH]
+-- 21/12 11:11:37:156 - TraduzirTag(</logo>) -> [FS]p[SOH][NUL]
+-- 21/12 11:11:37:162 - TraduzirTag(<n>) -> [ESC]E
+-- 21/12 11:11:37:164 - TraduzirTag(</n>) -> [ESC]F
+-- 21/12 11:11:37:169 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:171 - TraduzirTag(</ae>) -> [ESC]a[NUL]
+-- 21/12 11:11:37:177 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:180 - TraduzirTag(</linha_simples>) -> -----------------------------------------------------
+-- 21/12 11:11:37:186 - TraduzirTag(</fn>) -> [ESC]![NUL][ESC]H[ESC]5
+-- 21/12 11:11:37:188 - TraduzirTag(</ce>) -> [ESC]a[SOH]
+-- 21/12 11:11:37:236 - TraduzirTag(<n>) -> [ESC]E
+-- 21/12 11:11:37:262 - TraduzirTag(</n>) -> [ESC]F
+-- 21/12 11:11:37:268 - TraduzirTag(</linha_simples>) -> ----------------------------------------
+-- 21/12 11:11:37:274 - TraduzirTag(</ae>) -> [ESC]a[NUL]
+-- 21/12 11:11:37:276 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:282 - TraduzirTag(</ae>) -> [ESC]a[NUL]
+-- 21/12 11:11:37:285 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:291 - TraduzirTag(</linha_simples>) -> -----------------------------------------------------
+-- 21/12 11:11:37:292 - TraduzirTag(</linha_simples>) -> -----------------------------------------------------
+-- 21/12 11:11:37:298 - TraduzirTag(</ae>) -> [ESC]a[NUL]
+-- 21/12 11:11:37:301 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:307 - TraduzirTag(</ae>) -> [ESC]a[NUL]
+-- 21/12 11:11:37:309 - TraduzirTag(</fn>) -> [ESC]![NUL][ESC]H[ESC]5
+-- 21/12 11:11:37:315 - TraduzirTag(<e>) -> [ESC]W[SOH]
+-- 21/12 11:11:37:317 - TraduzirTag(</e>) -> [ESC]W[NUL]
+-- 21/12 11:11:37:323 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:326 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:332 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:333 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:339 - TraduzirTag(</fn>) -> [ESC]![NUL][ESC]H[ESC]5
+-- 21/12 11:11:37:341 - TraduzirTag(</linha_simples>) -> ----------------------------------------
+-- 21/12 11:11:37:347 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:350 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:355 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:358 - TraduzirTag(<n>) -> [ESC]E
+-- 21/12 11:11:37:363 - TraduzirTag(</n>) -> [ESC]F
+-- 21/12 11:11:37:369 - TraduzirTag(</fn>) -> [ESC]![NUL][ESC]H[ESC]5
+-- 21/12 11:11:37:372 - TraduzirTag(</linha_simples>) -> ----------------------------------------
+-- 21/12 11:11:37:377 - TraduzirTag(</ce>) -> [ESC]a[SOH]
+-- 21/12 11:11:37:379 - TraduzirTag(<n>) -> [ESC]E
+-- 21/12 11:11:37:385 - TraduzirTag(</n>) -> [ESC]F
+-- 21/12 11:11:37:387 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:393 - TraduzirTag(</fn>) -> [ESC]![NUL][ESC]H[ESC]5
+-- 21/12 11:11:37:396 - TraduzirTagBloco(<code128>, 3517121050819300014059) -> [GS]w[STX][GS]h2[GS]H[NUL][GS]kI[24]3517121050819300014059
+-- 21/12 11:11:37:402 - TraduzirTagBloco(<code128>, 0001120100000408704246) -> [GS]w[STX][GS]h2[GS]H[NUL][GS]kI[24]0001120100000408704246
+-- 21/12 11:11:37:404 - TraduzirTagBloco(<qrcode_tipo>, 2) -> 
+-- 21/12 11:11:37:410 - TraduzirTagBloco(<qrcode_error>, 0) -> 
+-- 21/12 11:11:37:413 - TraduzirTagBloco(<qrcode>, 35171210508193000140590001120100000408704246|20171221111133|5.50|31245413830|g1drVlrUfOWw4QYuRkPY7SS3asjCeePReq75sltbbbKffWkenoSOu9r6Jnjf0nb9odbCtapQCNsxVgwnaE2YAKjQLNR56fTlim0zCz/M6TI2f8OXSpTBYGydQQqIBDIoHndXw1rAGT49PrKUjCVGkYOkdt1xbujq1xZA+S7GAxmrhd6qIJeCP4c/2tvMPzlOS3j76+AxRd7yWWxUryg+YrsuVEsp383a4dxr3gFj/q2LmDx5EJiwO4qGB3x0F9M02hhcZLn7rEMo+Du+J2ykXpBEkqLF/7wKK0WpU02g4y7QMwxxjmGCjd1UC4UlhwJ1BmLHRNR7e/03k7TzEe82vA==) -> [GS]kQ[NUL][BS][NUL][SOH][165][SOH]35171210508193000140590001120100000408704246|20171221111133|5.50|31245413830|g1drVlrUfOWw4QYuRkPY7SS3asjCeePReq75sltbbbKffWkenoSOu9r6Jnjf0nb9odbCtapQCNsxVgwnaE2YAKjQLNR56fTlim0zCz/M6TI2f8OXSpTBYGydQQqIBDIoHndXw1rAGT49PrKUjCVGkYOkdt1xbujq1xZA+S7GAxmrhd6qIJeCP4c/2tvMPzlOS3j76+AxRd7yWWxUryg+YrsuVEsp383a4dxr3gFj/q2LmDx5EJiwO4qGB3x0F9M02hhcZLn7rEMo+Du+J2ykXpBEkqLF/7wKK0WpU02g4y7QMwxxjmGCjd1UC4UlhwJ1BmLHRNR7e/03k7TzEe82vA==
+-- 21/12 11:11:37:418 - TraduzirTagBloco(<qrcode_tipo>, 2) -> 
+-- 21/12 11:11:37:420 - TraduzirTagBloco(<qrcode_error>, 0) -> 
+-- 21/12 11:11:37:426 - TraduzirTag(</ce>) -> [ESC]a[SOH]
+-- 21/12 11:11:37:429 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:435 - TraduzirTag(</linha_simples>) -> -----------------------------------------------------
+-- 21/12 11:11:37:437 - TraduzirTag(</ce>) -> [ESC]a[SOH]
+-- 21/12 11:11:37:443 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:445 - TraduzirTag(</ce>) -> [ESC]a[SOH]
+-- 21/12 11:11:37:451 - TraduzirTag(<c>) -> [ESC][15]
+-- 21/12 11:11:37:453 - TraduzirTag(</pular_linhas>) ->  [LF]
+-- 21/12 11:11:37:461 - EnviarStringDevice( [ESC]@[GS][249] [NUL][ESC]3[SOH][ESC]t[BS][ESC]a[SOH][FS]p[SOH][NUL][CR][LF][ESC]E[ESC]F[CR][LF][ESC][15]J W VETERINARIA LTDA ME[CR][LF]RUA JACINTO FELIZARDO BARBOSA 856  CENTRO-MIGUELOPOLIS-14530-000[CR][LF][ESC]a[NUL][ESC][15]CNPJ:10.508.193/0001-40 IE:445078786117 IM:00000[CR][LF]-----------------------------------------------------[CR][LF][ESC]![NUL][ESC]H[ESC]5[ESC]a[SOH][ESC]EExtrato No. 000040[CR][LF]CUPOM FISCAL ELETR[195][148]NICO - SAT[ESC]F[CR][LF]----------------------------------------[CR][LF][ESC]a[NUL][ESC][15]CPF/CNPJ do Consumidor: 312.454.138-30[CR][LF][ESC]a[NUL][ESC][15]-----------------------------------------------------[CR][LF]# COD DESC  QTD  UN  VL UN R$  (VLTR R$)*  VL ITEM R$[CR][LF]-----------------------------------------------------[CR][LF][ESC]a[NUL][ESC][15]001 238 AREIA GATISSIMO 4KG         1 SC X 5,500 5,50[CR][LF][ESC]a[NUL][ESC]![NUL][ESC]H[ESC]5[ESC]W[SOH]TOTAL R$        5,50[ESC]W[NUL][CR][LF][ESC][15]Dinheiro                                         5,50[CR][LF][ESC][15] [CR][LF][ESC][15]ICMS a ser recolhido conforme LC 123/2006 - Simples Nacional[CR][LF][ESC][15]02.03.04.03-Consulte o QRCode deste extrato atraves do App DeOlhoNaNota[CR][LF][ESC]![NUL][ESC]H[ESC]5----------------------------------------[CR][LF]OBSERVA[195][135][195][149]ES DO CONTRIBUINTE[CR][LF][ESC][15]OPERADOR:  - Caixa: 001[CR][LF][ESC][15]*Valor aproximado dos tributos do item[CR][LF][ESC][15]Valor aproximado dos tributos deste cupom R$  [ESC]E1,73[CR][LF][ESC]F(conforme Lei Fed. 12.741/2012)[CR][LF][ESC]![NUL][ESC]H[ESC]5----------------------------------------[CR][LF][ESC]a[SOH]SAT No. [ESC]E112010[ESC]F[CR][LF]21/12/2017 11:11:33[CR][LF][ESC][15]35171210508193000140590001120100000408704246[ESC]![NUL][ESC]H[ESC]5[CR][LF][GS]w[STX][GS]h2[GS]H[NUL][GS]kI[24]3517121050819300014059[CR][LF][GS]w[STX][GS]h2[GS]H[NUL][GS]kI[24]0001120100000408704246[CR][LF][GS]kQ[NUL][BS][NUL][SOH][165][SOH]35171210508193000140590001120100000408704246|20171221111133|5.50|31245413830|g1drVlrUfOWw4QYuRkPY7SS3asjCeePReq75sltbbbKffWkenoSOu9r6Jnjf0nb9odbCtapQCNsxVgwnaE2YAKjQLNR56fTlim0zCz/M6TI2f8OXSpTBYGydQQqIBDIoHndXw1rAGT49PrKUjCVGkYOkdt1xbujq1xZA+S7GAxmrhd6qIJeCP4c/2tvMPzlOS3j76+AxRd7yWWxUryg+YrsuVEsp383a4dxr3gFj/q2LmDx5EJiwO4qGB3x0F9M02hhcZLn7rEMo+Du+J2ykXpBEkqLF/7wKK0WpU02g4y7QMwxxjmGCjd1UC4UlhwJ1BmLHRNR7e/03k7TzEe82vA==[CR][LF][ESC]a[SOH][ESC][15]Consulte o QR Code pelo aplicativo  "De olho na [CR][LF]nota", dispon[195][173]vel na AppStore (Apple) e PlayStore [CR][LF](Android)[CR][LF]-----------------------------------------------------[CR][LF][ESC]a[SOH][ESC][15]Projeto ACBr[CR][LF][ESC]a[SOH][ESC][15]Fone:1638355042 - [CR][LF] [LF][CR][LF])
+
+--------------------------------------------------------------------------------
+DESATIVAR - 21/12/17 11:11:39:007
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/01/26 14:37:12.000.775,=D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\Unit1.pas</Transaction>
+    <Transaction>2017/01/26 14:37:59.000.106,D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\Unit1.pas=D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\Funcoes\uTrocaCaracteresEspeciais.pas</Transaction>
+    <Transaction>2017/07/17 17:02:43.000.786,=D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\uFrmCadProdutos.pas</Transaction>
+  </Transactions>
+</BorlandProject>

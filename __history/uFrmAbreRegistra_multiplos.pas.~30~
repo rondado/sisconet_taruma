@@ -1,0 +1,337 @@
+unit uFrmAbreRegistra_multiplos;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, uFrmPadrao, DB, DBClient, DBCtrls, StdCtrls,
+  uFrameConfirmaCancela, ExtCtrls, Buttons, Mask;
+
+type
+  TFrmAbreRegistra_multiplos = class(TFrmPadrao)
+    DataMesa: TDataSource;
+    GroupBox1: TGroupBox;
+    Panel1: TPanel;
+    FrameConfirmaCancela1: TFrameConfirmaCancela;
+    Label1: TLabel;
+    ComboMesa: TDBLookupComboBox;
+    Label2: TLabel;
+    Label3: TLabel;
+    CdsAuxiliar: TClientDataSet;
+    CdsAuxiliarID_PRODUTO: TIntegerField;
+    CdsAuxiliarID_MESA: TIntegerField;
+    CdsAuxiliarQUANT: TFloatField;
+    DataAuxiliar: TDataSource;
+    EdtProduto: TMaskEdit;
+    SpeedButton1: TSpeedButton;
+    DbQuant: TDBEdit;
+    CdsAuxiliarPRECO: TFloatField;
+    labelGramas1: TLabel;
+    LabelGramas2: TLabel;
+    ProdutosSelecionados: TMemo;
+    CdsAuxiliarTOTAL: TFloatField;
+    CdsAuxiliarDESCRICAO: TStringField;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    CdsAuxiliarsoma: TAggregateField;
+    procedure FormShow(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure FrameConfirmaCancela1BtnCancelarClick(Sender: TObject);
+    procedure FrameConfirmaCancela1BtnConfirmarClick(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure ComboMesaExit(Sender: TObject);
+    procedure ComboMesaKeyPress(Sender: TObject; var Key: Char);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    sIDMesa,sIDProd : Integer;
+    valorValido : boolean;
+     pQuant,aTotal: double;
+     PesoGramas: String;
+
+  end;
+
+var
+  FrmAbreRegistra_multiplos: TFrmAbreRegistra_multiplos;
+
+implementation
+
+uses uDmWorkCom, uLibrary, uFrmProdutos, uDMClientes, uDmProdutos,
+  uFrmProdutos_multiplos;
+
+{$R *.dfm}
+
+procedure TFrmAbreRegistra_multiplos.FormShow(Sender: TObject);
+begin
+  inherited;
+  labelGramas1.Visible := false;
+  labelGramas2.Visible := false;
+
+  DataMesa.DataSet := DmWorkCom.CdsMesas;
+  DmWorkCom.Dados_Mesa;
+  CdsAuxiliar.Open;
+  CdsAuxiliar.Append;
+  CdsAuxiliarID_MESA.AsInteger := sIDMesa;
+  //
+  ComboMesa.Enabled := true;
+  if sIDMesa > 0 then
+  begin
+    ComboMesa.Enabled := false;
+    SpeedButton1Click(Sender);
+  end;
+
+end;
+
+procedure TFrmAbreRegistra_multiplos.ComboMesaExit(Sender: TObject);
+begin
+  inherited;
+  SpeedButton1Click(Sender);
+end;
+
+procedure TFrmAbreRegistra_multiplos.ComboMesaKeyPress(Sender: TObject; var Key: Char);
+begin
+  inherited;
+  TabEnter(Self,Key);
+end;
+
+procedure TFrmAbreRegistra_multiplos.FormCreate(Sender: TObject);
+begin
+  inherited;
+  sIDMesa := 0;
+  atotal := 0;
+  if not CdsAuxiliar.Active then
+     CdsAuxiliar.CreateDataSet;
+  CdsAuxiliar.EmptyDataSet;
+
+end;
+
+procedure TFrmAbreRegistra_multiplos.FrameConfirmaCancela1BtnCancelarClick(
+  Sender: TObject);
+begin
+  inherited;
+  CdsAuxiliar.Cancel;
+  Close;
+
+end;
+
+procedure TFrmAbreRegistra_multiplos.FrameConfirmaCancela1BtnConfirmarClick(Sender: TObject);
+var  qtdGranel : Double;
+    aIDMesa : Integer;
+begin
+
+  ////rondado se o produto for a granel
+  {if DmProdutos.CdsProdutos.FieldByName('A_GRANEL').AsString = 'S' then
+  begin
+        labelGramas1.Visible := false;
+        labelGramas2.Visible := false;
+        QtdGranel := StrToFloat(DbQuant.Text)/1000;
+        CdsAuxiliarQUANT.AsFloat := QtdGranel;
+  end;}
+
+  inherited;
+  if (CdsAuxiliar.RecordCount <= 0) or (CdsAuxiliarID_MESA.AsInteger <= 0) then
+  begin
+    MessageDlg('É necessários informar todos os dados da mesa e os produtos!!!', mtWarning, [mbOK], 0);
+    if ComboMesa.Enabled then
+       ComboMesa.SetFocus
+    else
+      // EdtProduto.SetFocus;
+    Abort;
+  end;
+  // verifica se mesa já foi aberta
+  if sIDMesa = 0 then
+  begin
+    if VerificaMesaAberta(aIDMesa,DataMesa.DataSet.FieldByName('ID').AsInteger) then
+    begin
+      MessageDlg('A mesa selecionada já esta aberta!!!', mtWarning, [mbOK], 0);
+    if ComboMesa.Enabled then
+       ComboMesa.SetFocus
+    else
+       //EdtProduto.SetFocus;
+      Abort;
+    end;
+  end;
+  if Confirmacao('Confirma este registro?') then
+  begin
+   // aTotal := 0;
+    //aTotal := CdsAuxiliarQUANT.AsFloat * CdsAuxiliarPRECO.AsFloat;
+    //aTotal := aTotal + RetornaTotalMesa(sIDMesa);
+
+
+
+    aTotal := aTotal + RetornaTotalMesa(sIDMesa);
+
+    if sIDMesa = 0 then
+    begin
+      DmWorkCom.CdsMesasAbertas.Append;
+      DmWorkCom.CdsMesasAbertas.FieldByName('ID_MESA').AsInteger    := DataMesa.DataSet.FieldByName('ID').AsInteger;
+      DmWorkCom.CdsMesasAbertas.FieldByName('NUMERO_MESA').AsString := DataMesa.DataSet.FieldByName('NUMERO_MESA').AsString;
+    end
+    else
+    begin
+      DmWorkCom.CdsMesasAbertas.Edit;
+    end;
+    DmWorkCom.CdsMesasAbertas.FieldByName('VALOR').AsFloat := aTotal;
+    Grava_Dados(DmWorkCom.CdsMesasAbertas);
+    // registra o item
+
+    cdsAuxiliar.Open;
+    cdsAuxiliar.first;
+    while not cdsAuxiliar.Eof do
+    begin
+    DmWorkCom.CdsMesasItens.Append;
+    DmWorkCom.CdsMesasItensID_PRODUTO.AsInteger := CdsAuxiliarID_PRODUTO.AsInteger;
+    DmWorkCom.CdsMesasItensDESCRICAO.AsString   := CdsAuxiliarDescricao.AsString;
+    DmWorkCom.CdsMesasItensQUANT.AsFloat        := CdsAuxiliarQUANT.AsFloat;
+    DmWorkCom.CdsMesasItensPRECO_UNIT.AsFloat   := CdsAuxiliarPRECO.AsFloat;
+    DmWorkCom.CdsMesasItensPRECO_TOTAL.AsFloat  := CdsAuxiliarTotal.AsFloat;
+    cdsauxiliar.Next;
+    end;
+    Grava_Dados(DmWorkCom.CdsMesasItens);
+  end;
+  Close;
+
+end;
+
+procedure TFrmAbreRegistra_multiplos.SpeedButton1Click(Sender: TObject);
+var idMesaProvisorio : integer;
+begin
+  inherited;
+  labelGramas1.Visible := false;
+  labelGramas2.Visible := false;
+
+
+
+  Application.CreateForm(TfrmProdutos_multiplos,FrmProdutos_multiplos);
+  try
+    frmProdutos_multiplos.sIDProd := 0;
+    frmProdutos_multiplos.sApenasConsulta := true;
+    frmProdutos_multiplos.multiplo:= true;
+    frmProdutos_multiplos.ShowModal;
+
+    frmProdutos_multiplos.CdsAuxiliarMultiplo.First;
+
+    idMesaProvisorio := DataMesa.DataSet.FieldByName('ID').AsInteger;
+
+    while not  frmProdutos_multiplos.CdsAuxiliarMultiplo.Eof  do
+    begin
+           sIDProd :=frmProdutos_multiplos.CdsAuxiliarMultiploID_produto.AsInteger;
+           DmProdutos.Dados_Produto(sIDProd);
+
+           cdsAuxiliar.Append;
+
+
+            //adicionar no cdsAuxiliar
+            if DmProdutos.CdsProdutos.FieldByName('A_GRANEL').AsString = 'S' then
+                 begin
+              PesoGramas :='';
+              valorValido := false;
+              while not valorValido do
+              begin
+               if InputQuery('Peso', 'Insira o peso em GRAMAS:', PesoGramas) then
+               begin
+
+               end
+               else
+               abort;
+                if IsNumeric(PesoGramas) then
+                begin
+                  pQuant := StrToFloat(PesoGramas) / 1000;
+                  valorValido := true;
+
+                   cdsAuxiliarID_Produto.AsInteger :=  DmProdutos.CdsProdutos.FieldByName('ID').asInteger;
+                   cdsAuxiliarDescricao.AsString :=    DmProdutos.CdsProdutos.FieldByName('DESCRICAO').AsString;
+                   cdsAuxiliarPreco.AsFloat :=  DmProdutos.CdsProdutos.FieldByName('PRECO_VENDA').AsFloat  ;
+                   cdsAuxiliarQuant.AsFloat := pQuant;
+                   cdsAuxiliarTotal.AsFloat := pQuant* DmProdutos.CdsProdutos.FieldByName('PRECO_VENDA').AsFloat;
+
+                   atotal:= atotal +  cdsAuxiliarTotal.AsFloat;
+                end
+                else
+                begin
+                  if Application.MessageBox
+                    ('Valor inválido - Deseja digitar outro Peso?', 'Erro',
+                    MB_ICONQUESTION + mb_yesno) = idYes then
+                  begin
+                    valorValido := false;
+                    PesoGramas := '';
+                  end
+                  else
+                  begin
+                    ShowMessage('O Produto não foi incluído');
+                    valorValido := true;
+                    PesoGramas := '';
+
+                    abort;
+                    // forçar para não incluir
+                    pQuant := StrToFloat(PesoGramas) / 1000;
+                  end;
+                end;
+              end;   //fim do while
+
+            end  // fim do IF do Agranel
+            else
+            begin
+             pQuant := 1;
+
+            cdsAuxiliarID_Produto.AsInteger :=  DmProdutos.CdsProdutos.FieldByName('ID').asInteger;
+            cdsAuxiliarDescricao.AsString :=    DmProdutos.CdsProdutos.FieldByName('DESCRICAO').AsString;
+            cdsAuxiliarPreco.AsFloat :=  DmProdutos.CdsProdutos.FieldByName('PRECO_VENDA').AsFloat  ;
+            cdsAuxiliarQuant.AsFloat := pQuant;
+            cdsAuxiliarTotal.AsFloat := pQuant* DmProdutos.CdsProdutos.FieldByName('PRECO_VENDA').AsFloat;
+
+            atotal:= atotal +  cdsAuxiliarTotal.AsFloat;
+            end;// fim se for a granel
+
+           ProdutosSelecionados.Text := ProdutosSelecionados.Text + #13 + #10 +
+           cdsAuxiliarID_Produto.AsString  +#9+
+           cdsAuxiliarDescricao.AsString  + #9+
+           cdsAuxiliarQuant.AsString + #9+
+           FormatFloat('R$ ###,###,##0.00',cdsAuxiliarPreco.AsFloat) + #9+
+           FormatFloat('R$ ###,###,##0.00',cdsAuxiliarTotal.AsFloat) ;
+
+
+
+    frmProdutos_multiplos.CdsAuxiliarMultiplo.Next;
+    end;
+
+
+    {if frmProdutos_multiplos.sIDProd > 0 then
+    begin
+      if DmProdutos.Dados_Produto(frmProdutos_multiplos.sIDProd) then
+      begin
+        EdtProduto.Text                 := DmProdutos.CdsProdutos.FieldByName('DESCRICAO').AsString;
+        CdsAuxiliarID_PRODUTO.AsInteger := DmProdutos.CdsProdutos.FieldByName('ID').AsInteger;
+        CdsAuxiliarPRECO.AsFloat        := DmProdutos.CdsProdutos.FieldByName('PRECO_VENDA').AsFloat;
+
+        ////rondado se o produto for a granel
+        if DmProdutos.CdsProdutos.FieldByName('A_GRANEL').AsString = 'S' then
+        begin
+           labelGramas1.Visible := true;
+           labelGramas2.Visible := true;
+           DbQuant.text :='';
+           DbQuant.SetFocus;
+        end;
+
+      end;
+//fabricio      DbQuant.SetFocus;
+    end; }
+
+
+
+  finally
+    frmProdutos_multiplos.Destroy;
+//fabricio inicio
+    {if EdtProduto.Text <> '' then
+       DbQuant.SetFocus;       }
+//fabricio fim
+
+  end;
+ DataMesa.DataSet.FieldByName('ID').AsInteger :=idMesaProvisorio;
+end;
+
+end.

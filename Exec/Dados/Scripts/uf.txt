@@ -1,0 +1,28 @@
+CODIGO  UF  DESCRICAO            DATA_INICIO
+11      RD  RONDONIA             01.01.2008   
+12      AC  ACRE                 01.01.2008   
+13      AM  AMAZONAS             01.01.2008   
+14      RR  RORAIMA              01.01.2008   
+15      PA  PARA                 01.01.2008   
+16      AP  AMAPA                01.01.2008   
+17      TO  TOCANTIS             01.01.2008   
+21      MA  MARANHAO             01.01.2008   
+22      PI  PIAUI                01.01.2008   
+23      CE  CEARA                01.01.2008   
+24      RN  RIO GRANDE DO NORTE  01.01.2008   
+25      PB  PARAIBA              01.01.2008   
+26      PE  PERNAMBUCO           01.01.2008   
+27      AL  ALAGOAS              01.01.2008   
+28      SE  SERGIPE              01.01.2008   
+29      BA  BAHIA                01.01.2008   
+31      MG  MINAS GERAIS         01.01.2008   
+32      ES  ESPIRITO SANTO       01.01.2008   
+33      RJ  RIO DE JANEIRO       01.01.2008   
+35      SP  SAO PAULO            01.01.2008   
+41      PR  PARANA               01.01.2008   
+42      SC  SANTA CATARINA       01.01.2008   
+43      RS  RIO GRANDE DO SUL    01.01.2008   
+50      MS  MATO GROSSO DO SUL   01.01.2008   
+51      MT  MATO GROSSO          01.01.2008   
+52      GO  GOIAS                01.01.2008   
+53      DF  DISTRITO FEDERAL     01.01.2008   

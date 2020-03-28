@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/04/22 17:06:03.000.111,C:\Programas\Projetos PAF-ECF\PAF-ECF\Food.dproj=C:\Programas\Projetos PAF-ECF\PAF-ECF\Mesas.dproj</Transaction>
+    <Transaction>2017/01/26 16:04:07.000.215,=D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\Funcoes\uTrocaCaracteresEspeciais.pas</Transaction>
+    <Transaction>2017/05/02 16:01:55.000.853,D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\uFrmProdutos.pas=D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\uFrmProdutos_multiplos.pas</Transaction>
+    <Transaction>2017/05/02 16:01:55.000.853,D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\uFrmProdutos.dfm=D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\uFrmProdutos_multiplos.dfm</Transaction>
+    <Transaction>2017/07/09 14:50:36.000.646,D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\uFrmAbreRegistra_multiplos.pas=D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\uFrmAbreRegistra.pas</Transaction>
+    <Transaction>2017/07/09 14:50:36.000.646,D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\uFrmAbreRegistra_multiplos.dfm=D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\uFrmAbreRegistra.dfm</Transaction>
+    <Transaction>2017/07/09 16:15:02.000.348,=D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\Funcoes\LanguageControl.pas</Transaction>
+    <Transaction>2017/07/09 16:56:38.000.218,=D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\uFrmProdutos.pas</Transaction>
+    <Transaction>2017/07/13 21:45:49.000.872,=D:\GoogleDrive\Downloads\Sisconet\SISCONET_v16_ATL_Bol_Tor_2017_ssl1698\SISCONET\uFrmAbreRegistra.pas</Transaction>
+  </Transactions>
+</BorlandProject>

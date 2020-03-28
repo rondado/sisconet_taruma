@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CFe>
+   <infCFe versaoDadosEnt="0.07">
+      <ide>
+         <CNPJ>26656034000122</CNPJ>
+         <signAC>Q45HQyq1jPlbvyOE/diFX33tTjU4tmwZ4VzAl6/dzIwal6dtgVOiUInpKlLCSzSiwcR1N5baW/Pua/qBzQbS0ZTng+lqtQmot2ILisWSpPaxAbLVuLasJ3r0rKNN2ukiUTYjtRBBUA0Hd6XnTr8Nd//6K4tGQoJ9E0D69MmPvlF/stVnmyJDAT8Y6lhITpgyr3fSfz/HYLU+nDOqMjBdx9VG0l8FEmt/xSsALS3jTGiSBAsPNZwVmMK0EWTtbkGZvmRCqgkCl+RPiAEtS/rkcP99AhvNlHGXNZU0kWnewEx/7dX5Ghv4bVxzqCsGc5oNY4LB56wCC8JbUN891EMozg==</signAC>
+         <numeroCaixa>001</numeroCaixa>
+      </ide>
+      <emit>
+         <CNPJ>26656034000122</CNPJ>
+         <IE>445027755117</IE>
+         <indRatISSQN>N</indRatISSQN>
+      </emit>
+      <dest>
+         <xNome>CONSUMIDOR NAO INFORMADO</xNome>
+      </dest>
+      <det nItem="1">
+         <prod>
+            <cProd>844</cProd>
+            <xProd>CAMPARI</xProd>
+            <NCM>22089000</NCM>
+            <CFOP>5102</CFOP>
+            <uCom>UN</uCom>
+            <qCom>1.0000</qCom>
+            <vUnCom>15.00</vUnCom>
+            <indRegra>A</indRegra>
+         </prod>
+         <imposto>
+            <ICMS>
+               <ICMSSN102>
+                  <Orig>0</Orig>
+                  <CSOSN>102</CSOSN>
+               </ICMSSN102>
+            </ICMS>
+            <PIS>
+               <PISSN>
+                  <CST>49</CST>
+               </PISSN>
+            </PIS>
+            <COFINS>
+               <COFINSSN>
+                  <CST>49</CST>
+               </COFINSSN>
+            </COFINS>
+         </imposto>
+      </det>
+      <det nItem="2">
+         <prod>
+            <cProd>720</cProd>
+            <xProd>CALDEIRADA DE FRUTOS DO MAR 1/2</xProd>
+            <NCM>21069090</NCM>
+            <CFOP>5102</CFOP>
+            <uCom>UN</uCom>
+            <qCom>1.0000</qCom>
+            <vUnCom>69.00</vUnCom>
+            <indRegra>A</indRegra>
+         </prod>
+         <imposto>
+            <ICMS>
+               <ICMSSN102>
+                  <Orig>0</Orig>
+                  <CSOSN>102</CSOSN>
+               </ICMSSN102>
+            </ICMS>
+            <PIS>
+               <PISSN>
+                  <CST>49</CST>
+               </PISSN>
+            </PIS>
+            <COFINS>
+               <COFINSSN>
+                  <CST>49</CST>
+               </COFINSSN>
+            </COFINS>
+         </imposto>
+      </det>
+      <total>
+         <vCFeLei12741>7.85</vCFeLei12741>
+      </total>
+      <pgto>
+         <MP>
+            <cMP>01</cMP>
+            <vMP>84.00</vMP>
+         </MP>
+      </pgto>
+      <infAdic>
+         <infCpl>OPERADOR:  - Caixa: 001</infCpl>
+      </infAdic>
+   </infCFe>
+</CFe>

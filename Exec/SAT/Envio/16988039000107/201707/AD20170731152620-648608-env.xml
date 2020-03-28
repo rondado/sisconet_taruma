@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CFe>
+   <infCFe versaoDadosEnt="0.07">
+      <ide>
+         <CNPJ>16988039000107</CNPJ>
+         <signAC>caztsHYMfCW9qZlPaJEIgGqteIsR+gj4cKaoLxT3JEM4BDB+Lwy4AHHs+u4o4qpsM3tayUC+loZ/xlSs8JaVW0tiNXy3e0/VPUzkwaL0+4vfhgQlJ11wt13YvkClF7/ML+RZKWCz+05w1eBeUMwidN3DcaPWfzxe5zsGy2LyGenKhDijydv2TjkRSq4KXdURYYrK4ii5qOdOnz/RXy/UKI8ZHM+vZIfTCTLRGtemUkkWy4Lvqzf4NjuS/4rcbLxER8/32aTb2LYayGcrP/S6UZd/niavOU1YHHqSKnJTbm5gA0X3OjkTADk4wCLMc9IXcFb0gHsNTAuTMef9zyafBg==</signAC>
+         <numeroCaixa>001</numeroCaixa>
+      </ide>
+      <emit>
+         <CNPJ>16988039000107</CNPJ>
+         <IE>445018375113</IE>
+         <IM>000000</IM>
+         <cRegTribISSQN>1</cRegTribISSQN>
+         <indRatISSQN>N</indRatISSQN>
+      </emit>
+      <dest>
+         <xNome>CONSUMIDOR NAO INFORMADO</xNome>
+      </dest>
+      <det nItem="1">
+         <prod>
+            <cProd>1052</cProd>
+            <xProd>CANUDO WAFFLE COM RECHEIO (ADICIONAIS)</xProd>
+            <NCM>21050090</NCM>
+            <CFOP>5102</CFOP>
+            <uCom>UN</uCom>
+            <qCom>1.0000</qCom>
+            <vUnCom>0.20</vUnCom>
+            <indRegra>A</indRegra>
+         </prod>
+         <imposto>
+            <ICMS>
+               <ICMSSN102>
+                  <Orig>0</Orig>
+                  <CSOSN>102</CSOSN>
+               </ICMSSN102>
+            </ICMS>
+            <PIS>
+               <PISSN>
+                  <CST>01</CST>
+               </PISSN>
+            </PIS>
+            <COFINS>
+               <COFINSSN>
+                  <CST>49</CST>
+               </COFINSSN>
+            </COFINS>
+         </imposto>
+      </det>
+      <total>
+         <vCFeLei12741>0.06</vCFeLei12741>
+      </total>
+      <pgto>
+         <MP>
+            <cMP>01</cMP>
+            <vMP>0.20</vMP>
+         </MP>
+      </pgto>
+      <infAdic>
+         <infCpl>OPERADOR:  - Caixa: 001</infCpl>
+      </infAdic>
+   </infCFe>
+</CFe>
